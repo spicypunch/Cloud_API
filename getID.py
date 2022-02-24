@@ -1,7 +1,7 @@
 import base64
 from api import decodeValue
 
-
+# 클라우드의 정보를 받고 base64를 이용한 암호화
 def main():
     tenantID = input('본인의 TenantID를 입력해주세요: ')
     userID = input('본인의 클라우드 ID를 입력해주세요: ')
