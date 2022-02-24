@@ -5,6 +5,7 @@ import requests
 import json
 import base64
 
+# 암호화된 값을 다시 복호화
 def decodeValue(tenantIDbase, userIDbase, passwdbase):
     global tenant_id, user_id, passwd
     decode_tenantid = base64.b64decode(tenantIDbase)
@@ -17,6 +18,7 @@ def decodeValue(tenantIDbase, userIDbase, passwdbase):
     print(tenant_id, user_id, passwd)
     return getOrder()
 
+# 실행 혹은 종료할 인스턴스의 정보를 
 def getOrder():
     while True:
         global server_name
