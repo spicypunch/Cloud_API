@@ -34,10 +34,10 @@ def getOrder():
             break
         else:
             print("다시 입력해주세요")
-    return getTenantID()
+    return getTokenID()
 
 # 토큰 ID 발급
-def getTenantID():
+def getTokenID():
     url = "https://api-identity.infrastructure.cloud.toast.com/v2.0/tokens"
     payload = json.dumps({
         "auth": {
