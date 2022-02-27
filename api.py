@@ -5,7 +5,7 @@ import requests
 import json
 import base64
 
-# base64 복호화
+# base64 디코딩
 def decodeValue(tenantIDbase, userIDbase, passwdbase):
     global tenant_id, user_id, passwd
     decode_tenantid = base64.b64decode(tenantIDbase)
